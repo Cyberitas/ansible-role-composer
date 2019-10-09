@@ -1,2 +1,7 @@
 ---
-# tasks file for composer
+- name: install Composer into sites folders
+  composer:
+    command: install
+    working_dir: "{{ item.site_folder }}"
+  loop: "{{ project_dirs }}"
+  when: project_dirs is defined 
