@@ -6,3 +6,4 @@
   loop: "{{ project_dirs }}"
   when: proejct_dirs is defined
 
+
