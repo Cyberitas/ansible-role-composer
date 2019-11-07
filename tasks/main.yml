@@ -1,2 +1,9 @@
 ---
-# tasks file for composer
+- name: Get Composer package manager from GetComposer.org
+  get_url:
+    url: https://getcomposer.org/download/1.9.0/composer.phar
+    dest:  "{{ item.site_dir }}/composer.phar"
+  loop: "{{ project_dirs }}"
+  when: proejct_dirs is defined
+
+
