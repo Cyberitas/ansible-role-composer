@@ -1,5 +1,6 @@
 galaxy_info:
-  author: James Dugger 
+  author: James Dugger
+  role_name: composer
   description: Install Composer PHP package manager on Linux 
   company: Cyberitas Technologies, LLC
   license: license (MIT)
